@@ -32,3 +32,7 @@ class Review(models.Model):
     created_at= models.DateTimeField(auto_now_add=True)
     updated_at= models.DateTimeField(auto_now=True)
     objects=ReviewManager()
+
+# book = Book.objects.get(id=1)
+# for review in book.reviews.all():
+#     review.user

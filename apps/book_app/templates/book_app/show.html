@@ -12,7 +12,7 @@
             <p>Rating : {{ review.rating }} </p>
             <p>Content : {{ review.content }} </p>
             
-               Reviewed By :<a href="/users/{{ review.user.id}}">{{ review.user.name }}</a>  
+               Reviewed By :<a href="{% url 'show_user' id=review.user.id %}">{{ review.user.name }}</a>  
                <p>Posted On: {{review.created_at}}</p>       
         {% endfor %}
 </body>
