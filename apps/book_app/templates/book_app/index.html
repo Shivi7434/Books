@@ -11,7 +11,7 @@
     <a href="{% url 'logout' %}">Logout</a>
 
     {% for book in books %}
-        <p>{{ book.title }}</p>
+        <p>{{ book.titles }}</p>
         <p>{{ book.author }}</p>
         {% for review in book.reviews.all %}
             <p>{{ review.rating }}</p>
